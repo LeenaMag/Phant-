@@ -89,12 +89,7 @@ email.addEventListener('blur', () => {
   localStorage.setItem('email', email.value);
 });
 
-document.querySelector(".button").
-                onclick = function () {
-                    if(password.value = password2.value){
-                        
-                    }
-                }
+
 
 
 

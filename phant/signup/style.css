@@ -2,6 +2,7 @@
 html, body { background: #c2c1c1; color: #000; }
 
 .container{
+    min-height: 100vh;
     background-color:#c2c1c1 ;
     width: 100%;
     display: flex;
@@ -18,7 +19,7 @@ html, body { background: #c2c1c1; color: #000; }
     border-radius: 25px;
     width: 400px;
     height: 700px;
-    margin: auto;
+    /*margin: auto;*/
     /*margin-top: 20px;*/
     /*padding: 20px;*/
     
@@ -29,6 +30,13 @@ html, body { background: #c2c1c1; color: #000; }
     width: 120px;
     height: 20px;
     margin: auto;
+}
+
+.camp:focus,
+.camp:focus-visible {
+  border-color: #00000047;              /* your focus color */
+  outline: none;                      /* remove default blue/orange outline */
+  box-shadow: 0 0 0 3px #00000020;    /* soft glow */
 }
 
 #title{

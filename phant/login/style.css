@@ -2,6 +2,7 @@
 html, body { background: #c2c1c1; color: #000; }
 
 .container{
+    min-height: 100vh;
     background-color:#c2c1c1 ;
     width: 100%;
     display: flex;
@@ -57,8 +58,15 @@ html, body { background: #c2c1c1; color: #000; }
   display: block;
   padding: 0 16px;
   box-sizing: border-box;
+   
 }
 
+.camp:focus,
+.camp:focus-visible {
+  border-color: #00000047;
+  outline: none;                      /* remove default blue/orange outline */
+  box-shadow: 0 0 0 3px #00000020;
+}
 /* Bottone login */
 .loginButton {
   background: linear-gradient(to right, #90fafe9c 10%, #9a2fff94 100%);

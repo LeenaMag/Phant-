@@ -1,4 +1,4 @@
-const sector = document.querySelector('.section');
+const section = document.querySelector('.section');
 const container = document.querySelector('.container')
 const first = document.getElementById('first');
 document.getElementById("title").innerHTML = "Login";
@@ -29,34 +29,25 @@ login.textContent = "Login";
 login.type = "button";
 
 const text = document.createElement('div');
+text.type = 'text';
 text.id = 'text';
-text.className = 'text';
-text.innerHTML = `Don't have an account? <a href='../signup/pageSignup.html' id='login'>Sign up</a>`;
+text.className = 'textUnder';
+text.innerHTML = `Don't have an account? <a href='../signup/pageSignup.html' id='signup'>Sign up</a>`;
 
 const space3 = document.createElement('div');
-text.id = 'space3';
-text.className = 'space3';
+space3.id = 'space3';
+space3.className = 'space3';
 
 
-
-// Style (best: via CSS class, but this works)
-nickname.style.cssText = 'background-color: #D9D9D9; border:1px solid #D9D9D9;border-radius:12px;width:270px;height:44px;margin:12px auto;display:block;padding:0 16px;box-sizing:border-box;';
-password.style.cssText = 'background-color: #D9D9D9; border:1px solid #D9D9D9;border-radius:12px;width:270px;height:44px;margin:12px auto;display:block;padding:0 16px;box-sizing:border-box;';
-login.style.cssText = 'background: linear-gradient(to right, #90fafe9c 10%, #9a2fff94 100%);border: 1px solid linear-gradient(to right, #90fafe9c 10%, #9a2fff94 100%); text-align: center; colour: #00000095; border-radius: 9999px;width:270px;height:44px;margin:12px auto;display:block;padding:0 16px;box-sizing:border-box;box-shadow: 1px 2px 5px #00000047;'
-login.style.border = "none";
-login.style.outline = "none";
-text.style.cssText = 'colour: #00000094; font-family: sans-serif; text-align: center; margin-top: min(5vw, 4px); font-size: 10pt;'
-space3.style.cssText = 'height: 180px;'
-
-// Insert into sector before #first
-sector.insertBefore(line, first); 
-sector.insertBefore(space3, line); 
-sector.insertBefore(text, space3); 
-sector.insertBefore(login, text); 
-sector.insertBefore(space2, login);
-sector.insertBefore(password, space2);
-sector.insertBefore(space, password);
-sector.insertBefore(nickname, space); // nickname above password
+// Insert into section before #first
+section.insertBefore(line, first); 
+section.insertBefore(space3, line); 
+section.insertBefore(text, space3); 
+section.insertBefore(login, text); 
+section.insertBefore(space2, login);
+section.insertBefore(password, space2);
+section.insertBefore(space, password);
+section.insertBefore(nickname, space); // nickname above password
 
 // Optional: save username (DON'T save passwords in localStorage)
 nickname.value = localStorage.getItem('nick') ?? '';

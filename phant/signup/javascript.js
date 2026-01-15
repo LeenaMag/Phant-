@@ -48,21 +48,9 @@ text.className = 'textLogup';
 text.innerHTML = `Already have an account? <a href='../login/pageLogin.html' id='sign'>Sign in</a>`;
 
 const space3 = document.createElement('div');
-text.id = 'space3';
-text.className = 'space3';
+space3.id = 'space3';
+space3.className = 'space3';
 
-
-
-// Style (best: via CSS class, but this works)
-nickname.style.cssText = 'background-color: #D9D9D9; border:1px solid #D9D9D9;border-radius:12px;width:270px;height:44px;margin:12px auto;display:block;padding:0 16px;box-sizing:border-box;';
-email.style.cssText = 'background-color: #D9D9D9; border:1px solid #D9D9D9;border-radius:12px;width:270px;height:44px;margin:12px auto;display:block;padding:0 16px;box-sizing:border-box;';
-password.style.cssText = 'background-color: #D9D9D9; border:1px solid #D9D9D9;border-radius:12px;width:270px;height:44px;margin:12px auto;display:block;padding:0 16px;box-sizing:border-box;';
-password2.style.cssText = 'background-color: #D9D9D9; border:1px solid #D9D9D9;border-radius:12px;width:270px;height:44px;margin:12px auto;display:block;padding:0 16px;box-sizing:border-box;';
-signup.style.cssText = 'background: linear-gradient(to right, #90fafe9c 10%, #9a2fff94 100%);border: 1px solid linear-gradient(to right, #90fafe9c 10%, #9a2fff94 100%); text-align: center; colour: #00000095; border-radius: 9999px;width:270px;height:44px;margin:12px auto;display:block;padding:0 16px;box-sizing:border-box;box-shadow: 1px 2px 5px #00000047;'
-signup.style.border = "none";
-signup.style.outline = "none";
-text.style.cssText = 'colour: #00000094; font-family: sans-serif; text-align: center; margin-top: min(5vw, 4px); font-size: 10pt;'
-space3.style.cssText = 'height: 10px;'
 
 // Insert into sector before #first
 sector.insertBefore(line, first); 
